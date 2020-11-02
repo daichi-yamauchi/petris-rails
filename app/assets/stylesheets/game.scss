@@ -1,0 +1,118 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+:root {
+  --block-size: 20px;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+div.header {
+  font-size: 3vw;
+  text-align: center;
+}
+
+div.display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1vh 1vw;
+}
+
+div.game {
+  /* background: pink; */
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+div.field {
+  /* background: cyan; */
+  margin: 1% 1%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back {
+  background: #111;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+}
+
+#field {
+  /* background: crimson; */
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+}
+
+#gameover {
+  font-size: 8vw;
+  z-index: 3;
+  display: inline-block;
+  color: #990000;
+  text-shadow: 3px 3px 9px #ffffff, -3px 3px 9px #ffffff, 3px -3px 9px #ffffff,
+    -3px -3px 9px #ffffff, 3px 0px 9px #ffffff, 0px 3px 9px #ffffff,
+    -3px 0px 9px #ffffff, 0px -3px 9px #ffffff;
+  transition: opacity 0.3s;
+}
+
+.hide {
+  opacity: 0;
+}
+
+div.info {
+  /* background: greenyellow; */
+  margin: 1% 1%;
+}
+
+div.info > div {
+  margin-bottom: 10%;
+}
+
+div.next {
+  /* background: orange; */
+  display: flex;
+  flex-direction: column;
+}
+
+#next {
+  background: #111;
+  margin: auto;
+  justify-self: center;
+}
+
+div.hold {
+  /* background: skyblue; */
+  display: flex;
+  flex-direction: column;
+}
+
+#hold {
+  background: #111;
+  margin: auto;
+  justify-self: center;
+}
+
+div.howto {
+  width: 70vw;
+  margin: auto;
+}
+
+div.howto > .header {
+  text-align: left;
+}
+
+div.howtodis {
+  font-size: 1.8vw;
+  margin-top: 5px;
+}
