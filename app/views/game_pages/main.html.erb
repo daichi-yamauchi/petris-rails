@@ -1,0 +1,34 @@
+<div class="display">
+  <div class="game">
+    <div class="field">
+      <canvas id="back"></canvas>
+      <canvas id="field"></canvas>
+      <div id="gameover" class="hide">GAMEOVER</div>
+    </div>
+    <div class="info">
+      <div class="next">
+        <div class="header">Next</div>
+        <canvas id="next"></canvas>
+      </div>
+      <div class="hold">
+        <div class="header">Hold</div>
+        <canvas id="hold"></canvas>
+      </div>
+      <div class="score">
+        <div class="header">score</div>
+        <p id="score">0</p>
+      </div>
+      <div class="level">
+        <div class="header">level</div>
+        <p>10</p>
+      </div>
+    </div>
+  </div>
+  <div class="howto">
+    <div class="header">How to Play</div>
+    <div class="howtodis">
+      ←→：移動、↓：落下、↑：確定、スペース：回転、b：逆回転、c：ホールド
+    </div>
+  </div>
+</div>
+<%= javascript_pack_tag 'main', 'data-turbolinks-track': 'reload' %>
