@@ -4,11 +4,6 @@ services:
   app:
     build:
       context: .
-      args:
-        UID: $LOCALUID
-        UNAME: $LOCALUNAME
-        GID: $LOCALGID
-        GNAME: $LOCALGNAME
     ports:
       - "3100:3000"
     volumes:
